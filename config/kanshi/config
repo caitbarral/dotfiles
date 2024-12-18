@@ -1,0 +1,12 @@
+profile {
+  output "eDP-1" mode 2256x1504@59.999Hz position 3840,656
+  output "DP-3" mode 3840x2160@143.999Hz position 0,0
+}
+
+profile {
+  output "DP-3" mode 3840x2160@143.999Hz position 0,0
+}
+
+profile {
+  output "eDP-1" mode 2256x1504@59.999Hz position 0,0 scale 1
+}

@@ -1,0 +1,7 @@
+require('ui.lualine')
+require('ui.bufferline')
+require('ui.neotree')
+require('ui.gitsigns.init')
+require('ui.general')
+require('ui.telescope')
+require('ui.noice')

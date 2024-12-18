@@ -1,0 +1,6 @@
+require('plugins')
+require('treesitter')
+require('lsp')
+require('nvimcmp')
+require('ui')
+require('keybinds')

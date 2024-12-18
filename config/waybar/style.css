@@ -1,0 +1,94 @@
+@import "./gruvbox.css";
+/* GLOBAL */
+* {
+  font-family: CaskaydiaCove NF SemiLight;
+  font-size: 24px;
+  color: @light0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window > box {
+  margin-bottom: 0px;
+  background-color: @dark0;
+}
+
+/* MODULES */
+
+#workspaces, #mode, #window,
+#disk, #cpu, #memory, #network,
+#clock, #tray, #scratchpad, #custom-spacer {
+  padding: 0px 5px;
+}
+
+/* workspace */
+#workspaces {
+  padding-left: 0;
+}
+#workspaces button {
+  border-radius: 0;
+  background-color: transparent;
+}
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: @dark0;
+  border: 1px solid @bright_orange;
+}
+#workspaces button.focused {
+  background: @dark2;
+}
+
+#window {
+  padding-right: 10px;
+}
+/* mode */
+#mode {
+  background-color: @bright_red;
+  color: @light0;
+}
+
+#custom-spacer {
+  color: @dark2;
+}
+
+#disk {
+  padding-left: 10px;
+  color: @bright_aqua;
+}
+
+#cpu {
+  color: @bright_purple;
+}
+
+#memory {
+  color: @bright_blue;
+}
+
+#network {
+  color: @bright_yellow;
+}
+
+#battery {
+  color: @bright_orange;
+}
+
+#network.disconnected, #network.disabled {
+  background: @faded_red;
+}
+
+#clock {
+  color: @bright_aqua;
+  padding-right: 10px;
+}
+
+#tray menu {
+  background: @dark0;
+  border: 1px solid @dark2;
+}
+
+#tray menu menuitem:hover {
+  background: @dark2;
+}

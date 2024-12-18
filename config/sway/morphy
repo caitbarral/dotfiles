@@ -1,0 +1,17 @@
+# Framework trackpad
+output eDP-1 resolution 2256x1504 scale 1
+
+input "type:keyboard" xkb_options caps:escape
+
+input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
+  tap enabled
+  pointer_accel -0.05
+}
+
+exec swayidle -w \
+  timeout 300 'swaylock -f -c 282828' \
+  timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+  timeout 900 'systemctl sleep' \
+  before-sleep 'swaylock -f -c 282828'\
+  ;
+

@@ -1,0 +1,7 @@
+[user]
+	name = Cait Barral
+	email = cait@caitbarral.com
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true

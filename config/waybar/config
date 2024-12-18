@@ -1,0 +1,54 @@
+{
+  "layer": "top",
+  "modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode", "sway/window"],
+  "modules-center": [],
+  "modules-right": [
+    "disk", "custom/spacer", "cpu", "custom/spacer", "memory", "custom/spacer", "network", "custom/spacer", "battery", "custom/spacer", "clock", "tray"
+  ],
+  "sway/workspaces": {
+    "format": "{}"
+  },
+  "custom/spacer": {
+    "format": "·"
+  },
+  "sway/window": {
+    "format": "{}"
+  },
+  "sway/mode": {
+    "min-length": 5,
+    "format": "<span style='italic'>{}</span>"
+  },
+  "disk": {
+    "format": "󰋊 {percentage_used:2}%"
+  },
+  "cpu": {
+    "format": " &#8239;{icon} {usage:2}%",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "interval": 1
+  },
+  "memory": {
+    "format": " &#8239;{icon} {used:2.0f}gb",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "interval": 1
+  },
+  "network": {
+    "format-ethernet": "E",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-wifi": "{icon} &#8239;{signalStrength:2}",
+    "format-disconnected": "Disconnected"
+  },
+  "battery": {
+    "interval": 1,
+    "full-at": 85,
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
+    "format-discharging": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
+    "format": "{icon} &#8239;{capacity:2}&#8239;&#8239;",
+  },
+  "clock": {
+    "interval": 1,
+    "locale": "C", 
+    "format": "{:%H:%M:%OS}",
+    "format-alt": "{:%A, %B %d}"
+  }
+}
