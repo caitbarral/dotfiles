@@ -1,1 +1,9 @@
-  output DP-3 mode 3840x2160@143.999Hz
+output DP-3 mode 3840x2160@143.999Hz
+
+exec swayidle -w \
+  timeout 900 'swaylock -f -c 282828' \
+  timeout 1200'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+  timeout 1500'systemctl sleep' \
+  before-sleep 'swaylock -f -c 282828'\
+  ;
+

@@ -89,6 +89,10 @@ window > box {
   border: 1px solid @dark2;
 }
 
+#tray * {
+  margin-right: 5px;
+}
+
 #tray menu menuitem:hover {
   background: @dark2;
 }
