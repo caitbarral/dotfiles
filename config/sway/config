@@ -85,10 +85,10 @@ client.background $bg
 # Basics:
 #
 # Start a terminal
-bindsym $mod+Return exec $term
+bindsym $mod+t exec $term
 
 # Start a terminal
-bindsym $mod+Shift+Return exec firefox
+bindsym $mod+b exec firefox
 
 # Kill focused window
 bindsym $mod+Shift+q kill
