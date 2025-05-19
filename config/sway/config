@@ -85,10 +85,10 @@ client.background $bg
 # Basics:
 #
 # Start a terminal
-bindsym $mod+t exec $term
+bindsym $mod+return exec $term
 
 # Start a terminal
-bindsym $mod+b exec firefox
+bindsym $mod+Shift+return exec firefox
 
 # Kill focused window
 bindsym $mod+Shift+q kill
@@ -266,6 +266,7 @@ exec_always setxkbmap -option compose:ralt
 exec batsignal -b -w 20 -c 10 -d 5
 exec_always 'pkill kanshi; exec kanshi'
 exec mako
+exec_always gammastep -l 41.881832:-87.623177
 # exec_always blueman-applet
 
 input * xkb_options compose:menu

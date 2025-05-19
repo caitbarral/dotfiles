@@ -1,12 +1,8 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   lazy = false,
   config = function()
     require("mason").setup()
-    require('mason-lspconfig').setup_handlers({
-      function(server)
-        require("lspconfig")[server].setup({})
-      end,
-    })
+    require('mason-lspconfig').setup()
   end
 }
