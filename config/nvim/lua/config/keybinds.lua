@@ -26,16 +26,16 @@ function M.setup()
 
   ---- Normal ----
   -- window navigation
-  map("n", "<C-h>", "<C-w>h")
-  map("n", "<C-j>", "<C-w>j")
-  map("n", "<C-k>", "<C-w>k")
-  map("n", "<C-l>", "<C-w>l")
+  map("n", "<C-Left>", "<C-w>h")
+  map("n", "<C-Down>", "<C-w>j")
+  map("n", "<C-Up>", "<C-w>k")
+  map("n", "<C-Right>", "<C-w>l")
 
   -- resizing windows
-  map("n", "<C-Left>", ":vertical resize -2<CR>")
-  map("n", "<C-Up>", ":resize -2<CR>")
-  map("n", "<C-Down>", ":resize +2<CR>")
-  map("n", "<C-Right>", ":vertical resize +2<CR>")
+  map("n", "<C-A-Left>", ":vertical resize -2<CR>")
+  map("n", "<C-A-Up>", ":resize -2<CR>")
+  map("n", "<C-A-Down>", ":resize +2<CR>")
+  map("n", "<C-A-Right>", ":vertical resize +2<CR>")
 
   -- switching buffers
   map("n", "<S-h>", ":BufferLineCyclePrev<CR>")
@@ -44,8 +44,8 @@ function M.setup()
   map("n", "<A-S-l>", ":BufferLineMoveNext<CR>")
 
   -- moving lines up and down
-  map("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
-  map("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
+  -- map("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
+  -- map("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
 
   -- toggle neotree
   map("n", "<leader>\\", ":Neotree toggle<CR>")

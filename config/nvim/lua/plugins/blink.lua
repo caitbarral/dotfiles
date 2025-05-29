@@ -5,14 +5,14 @@ local keymap = {
 
   ['<Tab>'] = { 'select_and_accept', 'fallback' },
 
-  ['<C-j>'] = { 'select_next', 'fallback' },
-  ['<C-k>'] = { 'select_prev', 'fallback' },
+  ['<C-Down>'] = { 'select_next', 'fallback' },
+  ['<C-Up>'] = { 'select_prev', 'fallback' },
 
   ['<C-b>'] = { 'scroll_documentation_up', 'fallback' },
   ['<C-f>'] = { 'scroll_documentation_down', 'fallback' },
 
-  ['<C-n>'] = { 'snippet_forward', 'fallback' },
-  ['<C-p>'] = { 'snippet_backward', 'fallback' },
+  ['<C-Right>'] = { 'snippet_forward', 'fallback' },
+  ['<C-Left>'] = { 'snippet_backward', 'fallback' },
 
   ['<C-s>'] = { 'show_signature', 'hide_signature', 'fallback' },
 }
