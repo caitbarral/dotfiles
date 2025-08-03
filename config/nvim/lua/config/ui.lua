@@ -27,7 +27,7 @@ function M.setup()
   o.wrap = true
 
   -- line length indicator
-  o.colorcolumn = "80"
+  o.colorcolumn = "100"
 
   -- show whitespace
   o.list = true
