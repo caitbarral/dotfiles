@@ -79,6 +79,22 @@ window > box {
   background: @faded_red;
 }
 
+#custom-pomodoro {
+  color: @bright_blue;
+}
+
+#custom-pomodoro.work {
+  color: @bright_red;
+}
+
+#custom-pomodoro.break {
+  color: @bright_green;
+}
+
+#custom-pomodoro.pause {
+  color: @bright_yellow;
+}
+
 #clock {
   color: @bright_aqua;
   padding-right: 10px;

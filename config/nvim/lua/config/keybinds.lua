@@ -38,10 +38,10 @@ function M.setup()
   map("n", "<C-A-Right>", ":vertical resize +2<CR>")
 
   -- switching buffers
-  map("n", "<S-h>", ":BufferLineCyclePrev<CR>")
-  map("n", "<S-l>", ":BufferLineCycleNext<CR>")
-  map("n", "<A-S-h>", ":BufferLineMovePrev<CR>")
-  map("n", "<A-S-l>", ":BufferLineMoveNext<CR>")
+  map("n", "<S-l>", ":BufferLineCyclePrev<CR>")
+  map("n", "<S-h>", ":BufferLineCycleNext<CR>")
+  map("n", "<A-S-l>", ":BufferLineMovePrev<CR>")
+  map("n", "<A-S-h>", ":BufferLineMoveNext<CR>")
 
   -- moving lines up and down
   -- map("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
